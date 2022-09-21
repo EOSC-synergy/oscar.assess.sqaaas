@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: 1.7.0_no_kubectl
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/grycap/oscar:
+      branch: master
+      repo: https://github.com/grycap/oscar
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/grycap/oscar git:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-thistle-slug.sh
+        container: qc.acc_homely-crimson-gar
+  QC.Doc:
+    repos:
+      github.com/grycap/oscar find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cozy-coral-dane.sh
+        container: qc.doc_slimy-red-harrier
+      github.com/grycap/oscar git:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-cobalt-chameleon.sh
+        container: qc.doc_flaky-chestnut-macaque
+      github.com/grycap/oscar markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.homey-lemon-squirt.sh
+        container: qc.doc_randy-mauve-lizard
+  QC.FAIR:
+    repos:
+      github.com/grycap/oscar F-UJI:
+        commands:
+        - /usr/bin/env sh .sqa/script.stinky-cobalt-weasel.sh
+        container: qc.fair_zippy-cinnabar-labradoodle
+  QC.Lic:
+    repos:
+      github.com/grycap/oscar licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-emerald-warthog.sh
+        container: qc.lic_thirsty-cardinal-ocelot
+  QC.Sec:
+    repos:
+      github.com/grycap/oscar bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-yellow-grouse.sh
+        container: qc.sec_bumpy-amethyst-balinese
+  QC.Sty:
+    repos:
+      github.com/grycap/oscar flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.lumpy-champagne-magpie.sh
+        container: qc.sty_snazzy-maroon-barracuda
+  QC.Ver:
+    repos:
+      github.com/grycap/oscar get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-cream-weasel.sh
+        container: qc.ver_nippy-malachite-dogfish
+timeout: 1800
