@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-brown-starfish.sh
-        container: qc.acc_skimpy-asparagus-bombay
+        - /usr/bin/env sh .sqa/script.lumpy-black-emu.sh
+        container: qc.acc_thirsty-yellow-tuatara
   QC.Doc:
     repos:
       github.com/grycap/oscar find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-pink-hornet.sh
-        container: qc.doc_flabby-azure-moose
+        - /usr/bin/env sh .sqa/script.homey-champagne-rat.sh
+        container: qc.doc_hilly-pear-manatee
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-olive-elephant.sh
-        container: qc.doc_wimpy-salmon-bee
+        - /usr/bin/env sh .sqa/script.pretty-apricot-olm.sh
+        container: qc.doc_wiggy-olivine-dragon
       github.com/grycap/oscar markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-khaki-hyena.sh
-        container: qc.doc_pokey-chestnut-meerkat
+        - /usr/bin/env sh .sqa/script.lanky-rust-toad.sh
+        container: qc.doc_smelly-taupe-mist
   QC.Lic:
     repos:
       github.com/grycap/oscar licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-russet-zonkey.sh
-        container: qc.lic_homely-thistle-grouse
+        - /usr/bin/env sh .sqa/script.wiggy-vermilion-binturong.sh
+        container: qc.lic_nippy-puce-wildebeest
   QC.Sec:
     repos:
       github.com/grycap/oscar bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-coral-macaw.sh
-        container: qc.sec_skanky-ochre-dogfish
+        - /usr/bin/env sh .sqa/script.gamy-apricot-monster.sh
+        container: qc.sec_craggy-carmine-fish
       github.com/grycap/oscar gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-corn-dragonfly.sh
-        container: qc.sec_whiny-firebrick-squirrel
+        - /usr/bin/env sh .sqa/script.lousy-crimson-argentino.sh
+        container: qc.sec_stinky-smalt-beetle
   QC.Sty:
     repos:
       github.com/grycap/oscar flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cerise-chin.sh
-        container: qc.sty_jumpy-buff-grasshopper
+        - /usr/bin/env sh .sqa/script.homey-bistre-otter.sh
+        container: qc.sty_wiggy-cerulean-wolf
       github.com/grycap/oscar staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-charcoal-mastiff.sh
-        container: qc.sty_cloudy-ruby-bombay
+        - /usr/bin/env sh .sqa/script.hazy-ochre-reindeer.sh
+        container: qc.sty_pasty-tangerine-kiwi
   QC.Ver:
     repos:
       github.com/grycap/oscar get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-green-wildebeest.sh
-        container: qc.ver_flabby-goldenrod-toad
+        - /usr/bin/env sh .sqa/script.hazy-lilac-emu.sh
+        container: qc.ver_surly-emerald-macaw
 timeout: 1800
