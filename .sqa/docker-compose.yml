@@ -1,5 +1,5 @@
 services:
-  qc.acc_pretty-rose-lionfish:
+  qc.acc_dorky-pumpkin-barb:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,15 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_greasy-olive-slug:
-    command: sleep 6000000
-    image: bitnami/git:2.34.1
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_squirrely-linen-hummingbird:
+  qc.doc_craggy-russet-coyote:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -25,7 +17,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_surly-brown-baboon:
+  qc.doc_nippy-malachite-elephant:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -35,7 +27,15 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_squeaky-salmon-ladybird:
+  qc.doc_pokey-cardinal-oyster:
+    command: sleep 6000000
+    image: bitnami/git:2.34.1
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.lic_gummy-pumpkin-llama:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -45,17 +45,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sec_hasty-charcoal-tapir:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sec/gosec
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.sec_snippy-aqua-cuscus:
+  qc.sec_freaky-blue-beetle:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sec/bandit
       dockerfile: Dockerfile
@@ -65,7 +55,17 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_chummy-gamboge-bonobo:
+  qc.sec_sleepy-heliotrope-heron:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sec/gosec
+      dockerfile: Dockerfile
+    command: sleep 6000000
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.sty_leaky-fuchsia-opossum:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
@@ -73,7 +73,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_snazzy-razzmatazz-gorilla:
+  qc.ver_gamy-beige-shrew:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
