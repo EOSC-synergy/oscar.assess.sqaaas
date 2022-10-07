@@ -1,4 +1,4 @@
 (
 cd github.com/grycap/oscar &&
-    jsonlint 
+    jsonlint-cli "**/*.json"
 )
