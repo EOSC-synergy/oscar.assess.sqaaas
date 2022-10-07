@@ -15,56 +15,56 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-saffron-giraffe.sh
-        container: qc.acc_breezy-turquoise-zebu
+        - /usr/bin/env sh .sqa/script.scummy-asparagus-cat.sh
+        container: qc.acc_craggy-lavender-burmese
   QC.Doc:
     repos:
       github.com/grycap/oscar find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-tangerine-albatross.sh
-        container: qc.doc_gamy-harlequin-avocet
+        - /usr/bin/env sh .sqa/script.ugly-sapphire-quetzal.sh
+        container: qc.doc_muggy-azure-pig
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-salmon-clam.sh
-        container: qc.doc_shaky-ochre-kiwi
+        - /usr/bin/env sh .sqa/script.nerdy-violet-eleuth.sh
+        container: qc.doc_dorky-sangria-gerbil
       github.com/grycap/oscar markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-champagne-squirrel.sh
-        container: qc.doc_bumpy-chartreuse-jackal
+        - /usr/bin/env sh .sqa/script.tasty-plum-blue.sh
+        container: qc.doc_skinny-eggplant-moose
   QC.Lic:
     repos:
       github.com/grycap/oscar licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-plum-dachsbracke.sh
-        container: qc.lic_whiny-razzmatazz-molly
+        - /usr/bin/env sh .sqa/script.lumpy-coral-angora.sh
+        container: qc.lic_homey-rust-flounder
   QC.Sec:
     repos:
       github.com/grycap/oscar bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-maroon-sponge.sh
-        container: qc.sec_woolly-emerald-newt
+        - /usr/bin/env sh .sqa/script.flaky-puce-bonobo.sh
+        container: qc.sec_randy-coral-dachshund
       github.com/grycap/oscar gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-orchid-sheep.sh
-        container: qc.sec_gummy-white-zorse
+        - /usr/bin/env sh .sqa/script.homely-asparagus-reindeer.sh
+        container: qc.sec_crappy-asparagus-donkey
   QC.Sty:
     repos:
       github.com/grycap/oscar flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-lilac-goose.sh
-        container: qc.sty_lousy-turquoise-indri
+        - /usr/bin/env sh .sqa/script.fuzzy-cobalt-chamois.sh
+        container: qc.sty_skanky-asparagus-woodpecker
       github.com/grycap/oscar jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-asparagus-sheepdog.sh
-        container: qc.sty_breezy-crimson-seal
+        - /usr/bin/env sh .sqa/script.silly-plum-orangutan.sh
+        container: qc.sty_gimpy-brass-hyena
       github.com/grycap/oscar staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-amaranth-reindeer.sh
-        container: qc.sty_scaly-asparagus-falcon
+        - /usr/bin/env sh .sqa/script.trippy-heliotrope-cat.sh
+        container: qc.sty_seedy-harlequin-fox
   QC.Ver:
     repos:
       github.com/grycap/oscar get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-lavender-rat.sh
-        container: qc.ver_foggy-ivory-eel
+        - /usr/bin/env sh .sqa/script.nerdy-periwinkle-starfish.sh
+        container: qc.ver_skanky-olive-insect
 timeout: 1800
