@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/1.7.10
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/oscar:
       branch: master
@@ -15,66 +15,66 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-amber-rottweiler.sh
-        container: qc.acc_stuffy-dandelion-foxhound
+        - /usr/bin/env sh .sqa/script.lovely-cardinal-monkey.sh
+        container: qc.acc_cranky-firebrick-chow
   QC.Doc:
     repos:
       github.com/grycap/oscar find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-chocolate-caterpillar.sh
-        container: qc.doc_thirsty-tomato-tetra
+        - /usr/bin/env sh .sqa/script.goopy-burgundy-swan.sh
+        container: qc.doc_thirsty-cream-clam
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-sepia-sheepdog.sh
-        container: qc.doc_lovely-cornflower-grasshopper
+        - /usr/bin/env sh .sqa/script.thirsty-grey-hedgehog.sh
+        container: qc.doc_crabby-cream-deer
       github.com/grycap/oscar markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-buff-saola.sh
-        container: qc.doc_messy-lime-ostrich
+        - /usr/bin/env sh .sqa/script.randy-olivine-dugong.sh
+        container: qc.doc_squirrely-khaki-wallaby
   QC.Lic:
     repos:
       github.com/grycap/oscar licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-apricot-markhor.sh
-        container: qc.lic_slimy-thistle-slug
+        - /usr/bin/env sh .sqa/script.ready-myrtle-fossa.sh
+        container: qc.lic_hazy-ruby-pig
   QC.Met:
     repos:
       github.com/grycap/oscar validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-lemon-pinscher.sh
-        container: qc.met_scaly-plum-tortoise
+        - /usr/bin/env sh .sqa/script.shaky-scarlet-dragonfly.sh
+        container: qc.met_wheezy-magenta-fish
   QC.Sec:
     repos:
       github.com/grycap/oscar bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-smalt-ragdoll.sh
-        container: qc.sec_gamy-ecru-audemer
+        - /usr/bin/env sh .sqa/script.cozy-silver-budgerigar.sh
+        container: qc.sec_chummy-chestnut-coyote
       github.com/grycap/oscar gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-gamboge-anteater.sh
-        container: qc.sec_baggy-red-dog
+        - /usr/bin/env sh .sqa/script.shaggy-zucchini-audemer.sh
+        container: qc.sec_sunny-ruby-stingray
   QC.Sty:
     repos:
       github.com/grycap/oscar flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-heliotrope-grouse.sh
-        container: qc.sty_hilly-tomato-chicken
+        - /usr/bin/env sh .sqa/script.seedy-puce-lobster.sh
+        container: qc.sty_snippy-brown-cuscus
       github.com/grycap/oscar hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-puce-tarsier.sh
-        container: qc.sty_flaky-pumpkin-kakapo
+        - /usr/bin/env sh .sqa/script.foggy-olive-rattlesnake.sh
+        container: qc.sty_stuffy-blue-dachshund
       github.com/grycap/oscar jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-magnolia-heron.sh
-        container: qc.sty_gamy-sangria-angora
+        - /usr/bin/env sh .sqa/script.frumpy-beige-worm.sh
+        container: qc.sty_lousy-cerise-monkey
       github.com/grycap/oscar staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-seashell-budgerigar.sh
-        container: qc.sty_lanky-burgundy-wrasse
+        - /usr/bin/env sh .sqa/script.queasy-ivory-shrew.sh
+        container: qc.sty_chewy-sangria-devil
   QC.Ver:
     repos:
       github.com/grycap/oscar get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-scarlet-scorpion.sh
-        container: qc.ver_muzzy-ecru-crab
+        - /usr/bin/env sh .sqa/script.goopy-indigo-frise.sh
+        container: qc.ver_zippy-peach-mammoth
 timeout: 5400
