@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.10
+      branch: release/1.7.11
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/oscar:
       branch: master
@@ -15,66 +15,66 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-black-booby.sh
-        container: qc.acc_snazzy-white-snake
+        - /usr/bin/env sh .sqa/script.foggy-pink-alligator.sh
+        container: qc.acc_lovely-eggplant-squid
   QC.Doc:
     repos:
       github.com/grycap/oscar find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-maroon-binturong.sh
-        container: qc.doc_chewy-denim-kangaroo
+        - /usr/bin/env sh .sqa/script.skinny-russet-nightingale.sh
+        container: qc.doc_muzzy-asparagus-catfish
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-scarlet-toad.sh
-        container: qc.doc_flaky-corn-ocelot
+        - /usr/bin/env sh .sqa/script.lanky-gold-duck.sh
+        container: qc.doc_sleepy-pear-fousek
       github.com/grycap/oscar markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-smalt-worm.sh
-        container: qc.doc_sloppy-yellow-catfish
+        - /usr/bin/env sh .sqa/script.fuzzy-rust-molly.sh
+        container: qc.doc_breezy-yellow-hedgehog
   QC.Lic:
     repos:
       github.com/grycap/oscar licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-orchid-albatross.sh
-        container: qc.lic_lumpy-seashell-armadillo
+        - /usr/bin/env sh .sqa/script.woolly-eggplant-termite.sh
+        container: qc.lic_queasy-amethyst-axolotl
   QC.Met:
     repos:
       github.com/grycap/oscar validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-wheat-robin.sh
-        container: qc.met_cloudy-coral-stoat
+        - /usr/bin/env sh .sqa/script.surly-cornflower-mammoth.sh
+        container: qc.met_homely-olivine-mongrel
   QC.Sec:
     repos:
       github.com/grycap/oscar bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-firebrick-hyena.sh
-        container: qc.sec_freaky-mauve-dollar
+        - /usr/bin/env sh .sqa/script.hilly-seashell-harrier.sh
+        container: qc.sec_trippy-platinum-forest
       github.com/grycap/oscar gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-thistle-baboon.sh
-        container: qc.sec_cloudy-wheat-numbat
+        - /usr/bin/env sh .sqa/script.wimpy-cerulean-dragon.sh
+        container: qc.sec_chummy-amaranth-husky
   QC.Sty:
     repos:
       github.com/grycap/oscar flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-russet-duck.sh
-        container: qc.sty_gamy-xanthic-beagle
+        - /usr/bin/env sh .sqa/script.baggy-periwinkle-horse.sh
+        container: qc.sty_sunny-purple-skunk
       github.com/grycap/oscar hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-gamboge-forest.sh
-        container: qc.sty_silly-teal-kiwi
+        - /usr/bin/env sh .sqa/script.snazzy-gamboge-iguana.sh
+        container: qc.sty_shaky-pear-bear
       github.com/grycap/oscar jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-ochre-argentino.sh
-        container: qc.sty_slimy-cornflower-anteater
+        - /usr/bin/env sh .sqa/script.stinky-pear-bird.sh
+        container: qc.sty_freaky-emerald-chin
       github.com/grycap/oscar staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-chocolate-bullfrog.sh
-        container: qc.sty_silly-magnolia-opossum
+        - /usr/bin/env sh .sqa/script.sloppy-ruby-numbat.sh
+        container: qc.sty_zippy-auburn-fowl
   QC.Ver:
     repos:
       github.com/grycap/oscar get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-scarlet-buzzard.sh
-        container: qc.ver_slaphappy-lilac-cockroach
+        - /usr/bin/env sh .sqa/script.gimpy-khaki-termite.sh
+        container: qc.ver_silly-lime-audemer
 timeout: 5400
