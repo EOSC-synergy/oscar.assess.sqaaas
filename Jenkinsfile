@@ -10,7 +10,13 @@ pipeline {
     agent any
 
     stages {
-        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Met & QC.Sec & QC.Sty & QC.Ver') {
+        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Met & QC.Sec & QC.Sty & QC.Uni & QC.Ver') {
+            when {
+                anyOf {
+                    changeset ".sqa/*"
+                    changeset "Jenkinsfile"
+                }
+            }
             steps {
                 script {
                     projectConfig = pipelineConfig(
