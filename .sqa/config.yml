@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/oscar:
-      branch: master
+      branch: v2.8.0
       repo: https://github.com/grycap/oscar
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,66 +15,66 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-lavender-tarsier.sh
-        container: qc.acc_lanky-saffron-barnacle
+        - /usr/bin/env sh .sqa/script.queasy-amethyst-newt.sh
+        container: qc.acc_scanty-white-dugong
   QC.Doc:
     repos:
       github.com/grycap/oscar find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-eggplant-earwig.sh
-        container: qc.doc_ugly-taupe-fly
+        - /usr/bin/env sh .sqa/script.craggy-platinum-beagle.sh
+        container: qc.doc_chewy-brass-orangutan
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-orange-mau.sh
-        container: qc.doc_foggy-gold-ant
+        - /usr/bin/env sh .sqa/script.slimy-chestnut-dhole.sh
+        container: qc.doc_nerdy-peach-fossa
       github.com/grycap/oscar markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-wheat-deer.sh
-        container: qc.doc_shaky-dandelion-ibis
+        - /usr/bin/env sh .sqa/script.squeaky-mauve-spaniel.sh
+        container: qc.doc_shabby-beige-cow
   QC.Lic:
     repos:
       github.com/grycap/oscar licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-brown-chinook.sh
-        container: qc.lic_wheezy-cerulean-saola
+        - /usr/bin/env sh .sqa/script.crappy-rust-moorhen.sh
+        container: qc.lic_blurry-viridian-sparrow
   QC.Met:
     repos:
       github.com/grycap/oscar validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-jade-orangutan.sh
-        container: qc.met_gimpy-amaranth-goat
+        - /usr/bin/env sh .sqa/script.stuffy-bronze-cougar.sh
+        container: qc.met_clammy-fuchsia-barb
   QC.Sec:
     repos:
       github.com/grycap/oscar bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-cream-lynx.sh
-        container: qc.sec_shabby-sapphire-cassowary
+        - /usr/bin/env sh .sqa/script.bumpy-cobalt-mongrel.sh
+        container: qc.sec_ready-buff-bandicoot
       github.com/grycap/oscar gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-cornflower-rhinoceros.sh
-        container: qc.sec_geeky-apricot-clam
+        - /usr/bin/env sh .sqa/script.snoopy-lavender-ferret.sh
+        container: qc.sec_crappy-cardinal-leopard
   QC.Sty:
     repos:
       github.com/grycap/oscar flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-razzmatazz-dogfish.sh
-        container: qc.sty_tacky-wisteria-gibbon
+        - /usr/bin/env sh .sqa/script.surly-harlequin-jaguar.sh
+        container: qc.sty_leaky-periwinkle-crab
       github.com/grycap/oscar hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-denim-fowl.sh
-        container: qc.sty_sickly-violet-collie
+        - /usr/bin/env sh .sqa/script.flabby-myrtle-earwig.sh
+        container: qc.sty_woozy-purple-manatee
       github.com/grycap/oscar jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-buff-skunk.sh
-        container: qc.sty_queasy-black-gharial
+        - /usr/bin/env sh .sqa/script.muzzy-violet-wombat.sh
+        container: qc.sty_stinky-wheat-capuchin
       github.com/grycap/oscar staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-apricot-octopus.sh
-        container: qc.sty_stealthy-orange-wasp
+        - /usr/bin/env sh .sqa/script.freaky-charcoal-flounder.sh
+        container: qc.sty_greasy-gold-chihuahua
   QC.Ver:
     repos:
       github.com/grycap/oscar get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-chestnut-heron.sh
-        container: qc.ver_whiny-tomato-leopard
+        - /usr/bin/env sh .sqa/script.droopy-black-spider.sh
+        container: qc.ver_sleepy-amaranth-deer
 timeout: 5400
