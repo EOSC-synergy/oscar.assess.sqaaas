@@ -15,76 +15,76 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnabar_lively_giraffe.sh
-        container: qc.acc_slate_rugged_owl
+        - /usr/bin/env sh .sqa/script.cornflower_kind_alpaca.sh
+        container: qc.acc_ultramarine_timid_mandrill
   QC.Doc:
     repos:
       github.com/grycap/oscar find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lime_intuitive_rabbit.sh
-        container: qc.doc_jade_productive_echidna
+        - /usr/bin/env sh .sqa/script.pine_lucky_gibbon.sh
+        container: qc.doc_crimson_rustic_chipmunk
       github.com/grycap/oscar git:
         commands:
-        - /usr/bin/env sh .sqa/script.sapphire_adaptable_dhole.sh
-        container: qc.doc_royal_frugal_bear
+        - /usr/bin/env sh .sqa/script.wave_attentive_falcon.sh
+        container: qc.doc_alabaster_stubborn_coyote
       github.com/grycap/oscar markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ecru_meticulous_newt.sh
-        container: qc.doc_strawberry_curious_hummingbird
+        - /usr/bin/env sh .sqa/script.grape_attentive_grizzly.sh
+        container: qc.doc_brown_passionate_bear
   QC.Lic:
     repos:
       github.com/grycap/oscar licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cobalt_reserved_orangutan.sh
-        container: qc.lic_ochre_meticulous_emu
+        - /usr/bin/env sh .sqa/script.mist_daring_ocelot.sh
+        container: qc.lic_gray_persistent_platypus
   QC.Met:
     repos:
       github.com/grycap/oscar validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.ultramarine_relaxed_sloth.sh
-        container: qc.met_sepia_sweet_wolf
+        - /usr/bin/env sh .sqa/script.pine_rugged_ibis.sh
+        container: qc.met_claret_meticulous_tarantula
   QC.Sec:
     repos:
       github.com/grycap/oscar bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sunset_upbeat_lynx.sh
-        container: qc.sec_cayenne_realistic_sloth
+        - /usr/bin/env sh .sqa/script.ochre_creative_orca.sh
+        container: qc.sec_sand_nurturing_reindeer
       github.com/grycap/oscar gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.jade_proactive_badger.sh
-        container: qc.sec_pansy_lively_bat
+        - /usr/bin/env sh .sqa/script.echelon_kind_clownfish.sh
+        container: qc.sec_mint_brilliant_skunk
   QC.Sty:
     repos:
       github.com/grycap/oscar flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.periwinkle_decisive_owl.sh
-        container: qc.sty_pineapple_eccentric_turkey
+        - /usr/bin/env sh .sqa/script.fuchsia_hardworking_swan.sh
+        container: qc.sty_beige_outgoing_hippopotamus
       github.com/grycap/oscar hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.byzantium_savvy_whale.sh
-        container: qc.sty_gray_generous_peacock
+        - /usr/bin/env sh .sqa/script.chartreuse_wondrous_coyote.sh
+        container: qc.sty_ebony_inventive_elephant
       github.com/grycap/oscar jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pansy_reserved_spren.sh
-        container: qc.sty_marigold_studious_serval
+        - /usr/bin/env sh .sqa/script.cinnamon_energetic_goose.sh
+        container: qc.sty_cerulean_polite_mongoose
       github.com/grycap/oscar oclint:
         commands:
-        - /usr/bin/env sh .sqa/script.pearl_reserved_hamster.sh
-        container: qc.sty_cinnabar_amiable_wasp
+        - /usr/bin/env sh .sqa/script.pearl_impulsive_opossum.sh
+        container: qc.sty_bronze_protective_orangutan
       github.com/grycap/oscar staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.saffron_calm_gibbon.sh
-        container: qc.sty_brown_proud_anaconda
+        - /usr/bin/env sh .sqa/script.nutmeg_melancholy_chinchilla.sh
+        container: qc.sty_cerise_reckless_pegasus
   QC.Uni:
     repos:
       github.com/grycap/oscar commands:
         commands:
-        - /usr/bin/env sh .sqa/script.jasmine_melancholy_wolverine.sh
-        container: qc.uni_isabelline_exuberant_wolverine
+        - /usr/bin/env sh .sqa/script.gray_honest_komodo.sh
+        container: qc.uni_royal_outgoing_finch
   QC.Ver:
     repos:
       github.com/grycap/oscar get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pansy_amiable_hawk.sh
-        container: qc.ver_wisteria_pensive_opossum
+        - /usr/bin/env sh .sqa/script.mauve_open_hyena.sh
+        container: qc.ver_horizon_daring_squirrel
 timeout: 5400
